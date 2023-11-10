@@ -46,7 +46,7 @@ Maintainer: Kent S Johnson <kjohnson@akoyabio.com>
 Authors@R: c(
     person("Kent S", "Johnson", role = c("aut", "cre"),
            email = "kjohnson@akoyabio.com"),
-    person("Akoya Biosciences", role="cph"))
+    person("Akoya Biosciences", role="cph"),
     person("Christian", "Rickert", role="ctb",
             email = "christian.rickert@cuanschutz.edu"))
 Remotes:
