@@ -77,7 +77,8 @@ count_within_batch <- function(base_path, pairs, radius, category=NA,
   all_phenotypes = unique(do.call(c, pairs))
   phenotype_rules = make_phenotype_rules(all_phenotypes, phenotype_rules)
 
-  combos = purrr::cross(list(pair=pairs, category=category))
+  combos = tidyr::expand_grid(category = category, pair = pairs) %>%
+           purrr::pmap(list)
 
   # Loop through all the cell seg data files
   purrr::map_df(files, function(path) {
@@ -165,7 +166,8 @@ count_within_many <- function(csd, pairs, radius, category=NA,
   all_phenotypes = unique(do.call(c, pairs))
   phenotype_rules = make_phenotype_rules(all_phenotypes, phenotype_rules)
 
-  combos = purrr::cross(list(pair=pairs, category=category))
+  combos = tidyr::expand_grid(category = category, pair = pairs) %>%
+           purrr::pmap(list)
 
   # Try to get a name for this field
   field_col = dplyr::if_else('Annotation ID' %in% names(csd),
