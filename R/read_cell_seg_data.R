@@ -129,7 +129,7 @@ read_cell_seg_data <- function(
   # compatibility with existing client code
   df = df %>%
     dplyr::mutate(dplyr::across(dplyr::starts_with('Phenotype'),
-                                tidyr::replace_na, replace=''))
+                                \(x) tidyr::replace_na(x, replace='')))
 
   # If any of these fields has missing values, the file may be damaged.
   no_na_cols = c("Path", "Sample Name", "Tissue Category", "Phenotype",
