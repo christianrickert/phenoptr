@@ -24,8 +24,15 @@ is highly recommended as well.
 1. Start RStudio.
 1. Install `phenoptr` from GitHub. In the RStudio console, copy and paste or type these commands (press Enter after each line):
 ```
+# install devtools package
 install.packages("devtools")
-devtools::install_github("akoyabio/phenoptr")
+
+# install rtree package for phenoptr
+# see: https://github.com/christianrickert/rtree/tree/master#installation
+devtools::install_github("christianrickert/rtree@master")
+
+# install phenoptr plugin from GitHub
+devtools::install_github("christianrickert/phenoptr")
 ```
 1. When requested, enter `1` (Yes) to install BiocInstaller.
 
@@ -98,8 +105,3 @@ To cite package `phenoptr` in publications use:
 
 &nbsp;&nbsp;Kent S Johnson (2022). phenoptr: inForm Helper Functions. R package version 0.3.2.  
 &nbsp;&nbsp;https://akoyabio.github.io/phenoptr/
-
-<!-- badges: start -->
-[![R build status](https://github.com/akoyabio/phenoptr/workflows/R-CMD-check/badge.svg)](https://github.com/akoyabio/phenoptr/actions)
-<!-- badges: end -->
-
