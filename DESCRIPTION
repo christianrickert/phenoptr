@@ -50,5 +50,5 @@ Authors@R: c(
     person("Christian", "Rickert", role="ctb",
             email = "christian.rickert@cuanschutz.edu"))
 Remotes:
-    akoyabio/rtree
+    christianrickert/rtree
 Roxygen: list(markdown = TRUE)
