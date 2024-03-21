@@ -1,3 +1,7 @@
+# Disclaimer
+
+This fork of `phenoptr` contains altering [source changes](https://github.com/christianrickert/phenoptr/compare/akoyabio%3Aphenoptr%3Amain...main) from the [source material](https://github.com/akoyabio/phenoptr).
+
 # phenoptr <img src="man/figures/Akoya.png" align="right" width="175" />
 
 ## Helpers for working with inForm data
