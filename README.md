@@ -27,10 +27,6 @@ is highly recommended as well.
 # install devtools package
 install.packages("devtools")
 
-# install rtree package for phenoptr
-# see: https://github.com/christianrickert/rtree/tree/master#installation
-devtools::install_github("christianrickert/rtree@master")
-
 # install phenoptr plugin from GitHub
 devtools::install_github("christianrickert/phenoptr")
 ```
