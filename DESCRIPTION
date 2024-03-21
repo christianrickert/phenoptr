@@ -1,44 +1,44 @@
 Package: phenoptr
 Type: Package
 Title: inForm Helper Functions
-Version: 0.3.3
-Date: 2023-11-10
+Version: 0.4.0
+Date: 2024-03-20
 Description: Helper functions for working with inForm data.
 Language: en-US
-biocViews: 
+biocViews:
 Imports:
-    dplyr (>= 0.8.0),
-    EBImage,
-    foreach,
-    ggplot2 (>= 3.3.2),
-    jpeg,
-    knitr,
-    lazyeval,
-    magrittr,
-    purrr (>= 0.3),
-    readr (>= 1.2.1),
-    rlang,
-    rmarkdown,
-    spatstat (>= 2.0-0),
-    spatstat.explore,
-    spatstat.geom,
-    stringr,
-    tibble,
-    tidyr (>= 1.0.0),
-    tiff (>= 0.1.8),
-    vroom (>= 1.5.1),
-    xml2
-Depends: R (>= 4.0.0)
+    dplyr (>= 1.1.4),
+    doParallel (>= 1.0.17),
+    EBImage (>= 4.42.0),
+    foreach (>= 1.5.2),
+    ggplot2 (>= 3.5.0),
+    jpeg (>= 0.1-10),
+    knitr (>= 1.45),
+    lazyeval (>= 0.2.2),
+    magrittr (>= 2.0.3),
+    purrr (>= 1.0.2),
+    readr (>= 2.1.5),
+    rlang (>= 1.1.3),
+    rmarkdown (>= 2.26),
+    rstudioapi (>= 0.15.0)
+    rtree (>= 0.2.0),
+    spatstat (>= 3.0-7),
+    spatstat.explore (>= 3.2-6),
+    spatstat.geom (>= 3.2-9),
+    stringr (>= 1.5.1),
+    testthat (>= 3.2.1),
+    tibble (>= 3.2.1),
+    tidyr (>= 1.3.1),
+    tiff (>= 0.1-12),
+    vroom (>= 1.6.5),
+    xml2 (>= 1.3.6)
+Depends: R (>= 4.3.3)
 License: Zlib | file LICENSE
 Copyright: Akoya Biosciences
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.2
 Config/testthat/edition: 3
-Suggests: 
-    testthat (>= 3.1.0),
-    doParallel,
-    rtree
 VignetteBuilder: knitr
 URL: https://akoyabio.github.io/phenoptr/
 BugReports: https://github.com/akoyabio/phenoptr/issues
@@ -50,5 +50,5 @@ Authors@R: c(
     person("Christian", "Rickert", role="ctb",
             email = "christian.rickert@cuanschutz.edu"))
 Remotes:
-    akoyabio/rtree
+    christianrickert/rtree
 Roxygen: list(markdown = TRUE)
