@@ -9,7 +9,7 @@ biocViews:
 Imports:
     dplyr (>= 1.1.4),
     doParallel (>= 1.0.17),
-    EBImage (>= 4.42.0),
+    EBImage (>= 4.45.1),
     foreach (>= 1.5.2),
     ggplot2 (>= 3.5.0),
     jpeg (>= 0.1-10),
@@ -50,5 +50,6 @@ Authors@R: c(
     person("Christian", "Rickert", role="ctb",
             email = "christian.rickert@cuanschutz.edu"))
 Remotes:
+    aoles/EBImage,
     christianrickert/rtree
 Roxygen: list(markdown = TRUE)
